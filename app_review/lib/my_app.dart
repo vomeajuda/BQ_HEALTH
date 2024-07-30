@@ -5,6 +5,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build( 
-    return MaterialApp();
+    return MaterialApp(
+      home: Home(),
+    );
   )
 }
