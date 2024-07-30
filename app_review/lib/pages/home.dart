@@ -4,7 +4,7 @@ class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
-  Widget build(
-      return 
-  );
+  Widget build(BuildContext context) {
+    return const Scaffold();
+  }
 }
