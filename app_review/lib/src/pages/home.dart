@@ -8,7 +8,15 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: generateAppbar,
-      body: ,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Container(),
+            Container(),
+          ],
+        ),
+      ),
     );
   }
 }
