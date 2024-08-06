@@ -5,6 +5,14 @@ class GeneralAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return AppBar(
+      title: const Text('BQ Health', style: tituloBonitinho,),
+      centerTitle: true,
+    );
   }
 }
+
+const tituloBonitinho = TextStyle(
+  fontSize: 14,
+  color: Colors.blue,
+);
