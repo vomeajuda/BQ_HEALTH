@@ -1,18 +1,10 @@
 import 'package:flutter/material.dart';
 
-class GeneralAppbar extends StatelessWidget {
-  const GeneralAppbar({super.key});
+var generateAppbar = AppBar(
+  centerTitle: true,
+);
 
-  @override
-  Widget build(BuildContext context) {
-    return AppBar(
-      title: const Text('BQ Health', style: tituloBonitinho,),
-      centerTitle: true,
-    );
-  }
-}
-
-const tituloBonitinho = TextStyle(
+const styleTitle = TextStyle(
   fontSize: 14,
   color: Colors.blue,
 );
