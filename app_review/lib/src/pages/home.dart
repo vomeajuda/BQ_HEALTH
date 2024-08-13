@@ -1,4 +1,5 @@
 import 'package:app_review/src/components/general_appbar.dart';
+import 'package:app_review/src/components/titulo.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -12,7 +13,10 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Container(),
+            Container(
+                decoration: containertitulo,
+                child: const Titulo(),
+              ),
             Container(),
           ],
         ),
@@ -20,3 +24,7 @@ class Home extends StatelessWidget {
     );
   }
 }
+
+const containertitulo = BoxDecoration(
+  color: Colors.lightBlue,
+);
