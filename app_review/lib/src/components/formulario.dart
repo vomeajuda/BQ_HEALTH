@@ -27,6 +27,7 @@ class _FormularioState extends State<Formulario> {
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
               onPressed: () {
+                
               },
               child: const Text('Calcular IMC'),
             ),
