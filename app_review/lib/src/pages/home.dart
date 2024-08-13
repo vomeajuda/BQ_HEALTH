@@ -1,3 +1,4 @@
+import 'package:app_review/src/components/formulario.dart';
 import 'package:app_review/src/components/titulo.dart';
 import 'package:flutter/material.dart';
 
@@ -13,11 +14,15 @@ class Home extends StatelessWidget {
           children: [
             Container(
                 width: double.infinity,
+                height: MediaQuery.of(context).size.height*0.13,
                 decoration: containertitulo,
                 child: const Center(child: Titulo()),
-              ),
+            ),
             Container(
-              
+                width: double.infinity,
+                height: MediaQuery.of(context).size.height*0.87,
+                decoration: containerprincipal,
+                child: const Formulario(),
             ),
           ],
         ),
@@ -28,4 +33,8 @@ class Home extends StatelessWidget {
 
 const containertitulo = BoxDecoration(
   color: Colors.lightGreen,
+);
+
+const containerprincipal = BoxDecoration(
+  color: Color.fromARGB(255, 122, 213, 255),
 );
