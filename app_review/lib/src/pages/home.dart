@@ -12,8 +12,9 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             Container(
+                width: double.infinity,
                 decoration: containertitulo,
-                child: const Titulo(),
+                child: const Center(child: Titulo()),
               ),
             Container(
               
