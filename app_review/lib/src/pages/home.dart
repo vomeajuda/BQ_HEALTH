@@ -1,4 +1,3 @@
-import 'package:app_review/src/components/general_appbar.dart';
 import 'package:app_review/src/components/titulo.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +7,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: generateAppbar,
       body: Padding(
         padding: const EdgeInsets.all(0.0),
         child: Column(
@@ -17,7 +15,9 @@ class Home extends StatelessWidget {
                 decoration: containertitulo,
                 child: const Titulo(),
               ),
-            Container(),
+            Container(
+              
+            ),
           ],
         ),
       ),
