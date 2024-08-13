@@ -5,6 +5,10 @@ class Titulo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('BQ Health');
+    return const Text('BQ Health', style: tituloBonito,);
   }
 }
+
+const tituloBonito = TextStyle(
+  fontSize: 50,
+);

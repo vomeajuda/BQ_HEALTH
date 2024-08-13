@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: generateAppbar,
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(0.0),
         child: Column(
           children: [
             Container(
@@ -26,5 +26,5 @@ class Home extends StatelessWidget {
 }
 
 const containertitulo = BoxDecoration(
-  color: Colors.lightBlue,
+  color: Colors.lightGreen,
 );
