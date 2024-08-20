@@ -18,11 +18,14 @@ class Home extends StatelessWidget {
                 decoration: containertitulo,
                 child: const Center(child: Titulo()),
             ),
-            Container(
-                width: double.infinity,
-                height: MediaQuery.of(context).size.height*0.87,
-                decoration: containerprincipal,
-                child: const Formulario(),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                  width: double.infinity,
+                  height: MediaQuery.of(context).size.height*0.40,
+                  decoration: containerprincipal,
+                  child: const Formulario(),
+              ),
             ),
           ],
         ),
@@ -37,4 +40,5 @@ const containertitulo = BoxDecoration(
 
 const containerprincipal = BoxDecoration(
   color: Color.fromARGB(255, 122, 213, 255),
+  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
 );

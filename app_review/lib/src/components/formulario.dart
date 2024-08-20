@@ -74,7 +74,7 @@ class _FormularioState extends State<Formulario> {
               ),
             ),
           ),
-          Text(resultIMC, style: const TextStyle(fontSize: 20),),
+          Center(child: Text(resultIMC, style: const TextStyle(fontSize: 20),)),
         ],
       ),
     );
