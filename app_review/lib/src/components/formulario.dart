@@ -72,7 +72,7 @@ class _FormularioState extends State<Formulario> {
               child: const Text('Calcular IMC'),
             ),
           ),
-          Text(resultIMC),
+          Text(resultIMC, style: const TextStyle(fontSize: 20),),
         ],
       ),
     );
