@@ -63,13 +63,15 @@ class _FormularioState extends State<Formulario> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
-            child: ElevatedButton(
-              onPressed: () {
-                if (chave.currentState!.validate()){
-                  _calcularIMC();
-                }
-              },
-              child: const Text('Calcular IMC'),
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  if (chave.currentState!.validate()){
+                    _calcularIMC();
+                  }
+                },
+                child: const Text('Calcular IMC'),
+              ),
             ),
           ),
           Text(resultIMC, style: const TextStyle(fontSize: 20),),
