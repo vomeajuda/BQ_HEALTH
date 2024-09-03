@@ -1,5 +1,5 @@
 String classificarIMC(double imc) {
-  if (imc < 18.5) {
+  if (imc < 18.5) { //verificacao de classificao do imc de acordo com o numero do imc
     return 'Abaixo do Peso';
   } else if (imc >= 18.5 && imc <= 24.9) {
     return 'Peso Normal';

@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.all(0.0),
         child: Column(
           children: [
-            Container(
+            Container( //container que compoe o header
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height*0.13,
                 decoration: containertitulo,
@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Container(
+              child: Container( //conteiner com o formulario dentro
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height*0.40,
                   decoration: containerprincipal,
@@ -34,11 +34,11 @@ class Home extends StatelessWidget {
   }
 }
 
-const containertitulo = BoxDecoration(
+const containertitulo = BoxDecoration( //decoracao do header
   color: Colors.lightGreen,
 );
 
-const containerprincipal = BoxDecoration(
+const containerprincipal = BoxDecoration( //decoracao do formulario
   color: Color.fromARGB(255, 122, 213, 255),
-  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
+  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20), bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
 );
