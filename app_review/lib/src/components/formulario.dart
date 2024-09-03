@@ -1,3 +1,5 @@
+import 'package:app_review/src/components/classification.dart';
+import 'package:app_review/src/components/idealweight.dart';
 import 'package:flutter/material.dart';
 
 class Formulario extends StatefulWidget {
@@ -25,8 +27,10 @@ class _FormularioState extends State<Formulario> {
     double altura = double.tryParse(alturaController.text.replaceAll(',', '.')) ?? 0;
 
     double imc = peso / (altura * altura);
+    String Classf = Classification(imc) as String;
+    String idealWeight = IdealWeight(altura) as String;
     setState(() {
-      resultIMC = 'Seu IMC é: ${imc.toStringAsFixed(2)}';
+      resultIMC = 'Seu IMC é: ${imc.toStringAsFixed(2)}\n$idealWeight';
     });
   }
 
@@ -75,8 +79,6 @@ class _FormularioState extends State<Formulario> {
             ),
           ),
           Center(child: Text(resultIMC, style: const TextStyle(fontSize: 20),)),
-          const Center(child: Text('Classificacao IMC', style: TextStyle(fontSize: 20))),
-          const Center(child: Text('peso ideal', style: TextStyle(fontSize: 20),)),     
         ],
       ),
     );
