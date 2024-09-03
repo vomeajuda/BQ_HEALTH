@@ -75,6 +75,8 @@ class _FormularioState extends State<Formulario> {
             ),
           ),
           Center(child: Text(resultIMC, style: const TextStyle(fontSize: 20),)),
+          const Center(child: Text('Classificacao IMC', style: TextStyle(fontSize: 20))),
+          const Center(child: Text('peso ideal', style: TextStyle(fontSize: 20),)),     
         ],
       ),
     );
